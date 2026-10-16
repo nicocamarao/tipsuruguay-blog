@@ -10,79 +10,296 @@
 <body>
   <div class="wrap">
     <header class="top">
-      <a class="brand" href="index.html" aria-label="Ir al inicio"><img src="img/logo.jpg" alt=""><span><strong>Tips Uruguay</strong><em>La tarifa se comparte</em></span></a>
+      <a class="brand" href="#inicio" data-ir="inicio" aria-label="Ir al inicio"><img src="img/logo.jpg" alt=""><span><strong>Tips Uruguay</strong><em>La tarifa se comparte</em></span></a>
       <nav class="desktop-nav">
-        <a href="ofertas.html">Ofertas</a>
-        <a href="aviones.html">Aviones</a>
-        <a href="cruceros.html">Cruceros</a>
-        <a href="bitacora.html">Bitácora</a>
-        <a href="acerca.html">Nicolás</a>
-        <a href="comunidad.html">La comunidad</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="#ofertas" data-ir="ofertas">Ofertas</a>
+        <a href="#aviones" data-ir="aviones">Aviones</a>
+        <a href="#cruceros" data-ir="cruceros">Cruceros</a>
+        <a href="#bitacora" data-ir="bitacora">Bitácora</a>
+        <a href="#nicolas" data-ir="nicolas">Nicolás</a>
+        <a href="#comunidad" data-ir="comunidad">La comunidad</a>
+        <a href="#contacto" data-ir="contacto">Contacto</a>
+        <a href="#terminos" data-ir="terminos">Términos</a>
       </nav>
       <details class="menu">
         <summary>Secciones</summary>
         <nav>
-          <a href="ofertas.html">Ofertas</a>
-          <a href="aviones.html">Aviones</a>
-          <a href="cruceros.html">Cruceros</a>
-          <a href="bitacora.html">Bitácora</a>
-          <a href="acerca.html">Nicolás</a>
-          <a href="comunidad.html">La comunidad</a>
-          <a href="contacto.html">Contacto</a>
+          <a href="#ofertas" data-ir="ofertas">Ofertas</a>
+          <a href="#aviones" data-ir="aviones">Aviones</a>
+          <a href="#cruceros" data-ir="cruceros">Cruceros</a>
+          <a href="#bitacora" data-ir="bitacora">Bitácora</a>
+          <a href="#nicolas" data-ir="nicolas">Nicolás</a>
+          <a href="#comunidad" data-ir="comunidad">La comunidad</a>
+          <a href="#contacto" data-ir="contacto">Contacto</a>
+          <a href="#terminos" data-ir="terminos">Términos</a>
         </nav>
       </details>
     </header>
-    <section class="hero">
-      <div class="hero-texto">
-        <div class="intro">
-          <p class="kicker">Desde Montevideo</p>
-          <h1>Un precio que no se cuenta, se pierde.</h1>
-          <p class="lede">Soy Nicolás Fiumarelli. Después de varios viajes en familia entendí que lo que me hacía feliz era contar el tip. Acá dejo descuentos, aviones y cruceros, ida y vuelta desde Montevideo.</p>
-        </div>
-        <aside class="author">
-          <img src="img/logo.jpg" alt="">
-          <div>
-            <strong>Nicolás Fiumarelli</strong>
-            <p>Montevideo. Ingeniero, y el que anota el precio antes de enamorarse del destino.</p>
-            <p><a href="acerca.html">Leer cómo empezó</a></p>
+
+    <div data-seccion="inicio">
+      <section class="hero">
+        <div class="hero-texto">
+          <div class="intro">
+            <p class="kicker">Desde Montevideo</p>
+            <h1>Un precio que no se cuenta, se pierde.</h1>
+            <p class="lede">Soy Nicolás Fiumarelli. Después de varios viajes en familia entendí que lo que me hacía feliz era contar el tip. Acá dejo descuentos, aviones y cruceros, ida y vuelta desde Montevideo.</p>
           </div>
-        </aside>
-      </div>
-      <div class="cubo-escena" data-cubo aria-live="polite"></div>
-    </section>
-    <section>
-      <p class="kicker">Para salir</p>
-      <h2>Salidas para mirar</h2>
-      <p>Cada tarjeta es un precio que miré con fecha, con lo que incluye y con lo que no. Si te gusta una, ábrela: el enlace va al sitio donde se reserva.</p>
-      <div class="cards" data-ofertas></div>
-    </section>
-    <section class="layout" style="margin-top:22px">
-      <a class="note" href="notas/costa-serena-febrero-2027.html">
-        <p class="meta">Crucero · febrero 2027</p>
-        <h2>El número que faltaba en el Costa Serena</h2>
-        <p>La agencia decía 999 dólares. La cuota del barco, ocho noches, no venía en ese cartel.</p>
-      </a>
-      <div class="side">
-        <a href="aviones.html"><strong>Aviones</strong><span class="meta">Pasajes directos desde Montevideo.</span></a>
-        <a href="cruceros.html"><strong>Cruceros</strong><span class="meta">Barcos que salen del puerto.</span></a>
-        <a href="comunidad.html"><strong>Dónde se reserva</strong><span class="meta">La compra queda en el sitio de cada compañía.</span></a>
-      </div>
-    </section>
-    <section>
-      <p class="kicker">Bitácora</p>
-      <h2>De la mesa de los viajes</h2>
+          <aside class="author">
+            <img src="img/logo.jpg" alt="">
+            <div>
+              <strong>Nicolás Fiumarelli</strong>
+              <p>Montevideo. Ingeniero, y el que anota el precio antes de enamorarse del destino.</p>
+              <p><a href="#nota-compartir">Leer cómo empezó</a></p>
+            </div>
+          </aside>
+        </div>
+        <div class="cubo-escena" data-cubo aria-live="polite"></div>
+      </section>
+      <section>
+        <p class="kicker">Para salir</p>
+        <h2>Salidas para mirar</h2>
+        <p>Cada tarjeta es un precio que miré con fecha, con lo que incluye y con lo que no. Si te gusta una, ábrela: el enlace va al sitio donde se reserva.</p>
+        <div class="cards" data-ofertas></div>
+      </section>
+      <section class="layout" style="margin-top:22px">
+        <a class="note" href="#nota-costa">
+          <p class="meta">Crucero · febrero 2027</p>
+          <h2>El número que faltaba en el Costa Serena</h2>
+          <p>La agencia decía 999 dólares. La cuota del barco, ocho noches, no venía en ese cartel.</p>
+        </a>
+        <div class="side">
+          <a href="#aviones"><strong>Aviones</strong><span class="meta">Pasajes directos desde Montevideo.</span></a>
+          <a href="#cruceros"><strong>Cruceros</strong><span class="meta">Barcos que salen del puerto.</span></a>
+          <a href="#comunidad"><strong>Dónde se reserva</strong><span class="meta">La compra queda en el sitio de cada compañía.</span></a>
+        </div>
+      </section>
+      <section>
+        <p class="kicker">Bitácora</p>
+        <h2>De la mesa de los viajes</h2>
+        <div class="notas">
+          <a href="#nota-compartir"><span class="meta">Por qué existe esto</span><strong>El tip era de todos</strong><span>Viajes en familia, y la decisión de contar el precio en vez de guardarlo.</span></a>
+          <a href="#nota-tarifa"><span class="meta">30 de septiembre de 2026</span><strong>Lo que el precio no dice</strong><span>Tres salidas, contadas con el equipaje y el día en que las miré.</span></a>
+          <a href="#nota-cruzar"><span class="meta">Buenos Aires</span><strong>Dos maneras de cruzar</strong><span>Un día por Colonia, o el barco directo. No es lo mismo.</span></a>
+          <a href="#nota-bolso"><span class="meta">Avión</span><strong>El bolso que sí entra</strong><span>Cuando el descuento solo incluye lo que llevas en la mano.</span></a>
+        </div>
+      </section>
+      <section data-voces></section>
+    </div>
+
+    <div data-seccion="ofertas" hidden>
+      <article class="post">
+        <p class="kicker">Para salir</p>
+        <h1>Lo que hay para mirar</h1>
+        <p>Precios de avión, crucero y un día en Buenos Aires, todos con salida desde Montevideo. Cada uno tiene fecha. Si esa fecha ya pasó, deja de aparecer.</p>
+        <div class="cards" data-ofertas></div>
+        <div data-voces></div>
+      </article>
+    </div>
+
+    <div data-seccion="aviones" hidden>
+      <article class="post">
+        <p class="kicker">Aviones</p>
+        <h1>Pasajes ida y vuelta desde Montevideo.</h1>
+        <p>Estos pasajes salen de Montevideo y vuelven a Montevideo. A veces el precio lindo solo incluye el bolso de mano. El carry-on y la valija aparecen después, cuando el número ya te convenció. Acá quedan contados antes.</p>
+        <div class="cards" data-ofertas data-tipo="avion"></div>
+      </article>
+    </div>
+
+    <div data-seccion="cruceros" hidden>
+      <article class="post">
+        <p class="kicker">Cruceros</p>
+        <h1>Barcos que salen de Montevideo.</h1>
+        <p>Barcos que zarpan de Montevideo. El cartel de la agencia no siempre trae la cuota del crucero. Cuando falta, la sumo antes de contarte el precio.</p>
+        <div class="cards" data-ofertas data-tipo="crucero"></div>
+      </article>
+    </div>
+
+    <div data-seccion="bitacora" hidden>
+      <article class="post">
+        <p class="kicker">Nicolás Fiumarelli</p>
+        <h1>Lo que voy anotando.</h1>
+        <p>Acá están las notas largas: por qué empecé a contar los precios, por qué todo sale de Montevideo, y las salidas que miré con calma. Cuando hay un número, dejo el día. El pasaje se compra en otro sitio.</p>
+      </article>
       <div class="notas">
-        <a href="notas/compartir-me-hace-feliz.html"><span class="meta">Por qué existe esto</span><strong>El tip era de todos</strong><span>Viajes en familia, y la decisión de contar el precio en vez de guardarlo.</span></a>
-        <a href="notas/como-leemos-una-tarifa.html"><span class="meta">30 de septiembre de 2026</span><strong>Lo que el precio no dice</strong><span>Tres salidas, contadas con el equipaje y el día en que las miré.</span></a>
-        <a href="notas/dos-maneras-de-cruzar.html"><span class="meta">Buenos Aires</span><strong>Dos maneras de cruzar</strong><span>Un día por Colonia, o el barco directo. No es lo mismo.</span></a>
-        <a href="notas/viajar-con-poco-equipaje.html"><span class="meta">Avión</span><strong>El bolso que sí entra</strong><span>Cuando el descuento solo incluye lo que llevas en la mano.</span></a>
+        <a href="#nota-compartir"><span class="meta">Inicio</span><strong>El tip era de todos</strong><span>Viajes en familia, y por qué dejé de guardar el precio para mí.</span></a>
+        <a href="#nota-montevideo"><span class="meta">Casa</span><strong>Siempre ida y vuelta</strong><span>Si no sale de Montevideo y no vuelve, acá no lo cuento.</span></a>
+        <a href="#nota-tarifa"><span class="meta">30 de septiembre de 2026</span><strong>Lo que el precio no dice</strong><span>Florianópolis, Punta Cana y un día en Buenos Aires.</span></a>
+        <a href="#nota-costa"><span class="meta">Crucero</span><strong>El número que faltaba</strong><span>La cuota del Costa Serena, aparte del cartel de la agencia.</span></a>
+        <a href="#nota-cruzar"><span class="meta">Buenos Aires</span><strong>Dos maneras de cruzar</strong><span>Colonia de ida y vuelta en el día, o el Francisco directo.</span></a>
+        <a href="#nota-bolso"><span class="meta">Avión</span><strong>El bolso que sí entra</strong><span>SKY y Arajet, cuando la tarifa básica es solo el artículo personal.</span></a>
       </div>
-    </section>
-    <section data-voces></section>
+    </div>
+
+    <div data-seccion="nota-compartir" hidden>
+      <article class="post">
+        <p class="kicker">Nicolás Fiumarelli · experiencia</p>
+        <h1>El día que entendí que el tip era de todos.</h1>
+        <p class="meta">16 de octubre de 2026</p>
+        <p>Los viajes que me formaron fueron en familia. Salir, volver, armar la valija otra vez. En esa repetición aparece un oficio chico: mirar el precio dos veces, preguntar qué incluye el equipaje, anotar el horario del ferry, acordarse de la cuota que el crucero no muestra en el número grande.</p>
+        <p>Durante un tiempo eso se quedaba en casa. Un papel, un mensaje, una conversación en la mesa. Me di cuenta de que compartir el tip entre todos era lo que me hacía feliz. No el destino en sí, o no solo el destino. La parte en que alguien más sale porque el dato circuló.</p>
+        <p>Ahí nació esta comunidad. Tips, descuentos, aviones y cruceros. Experiencias por el mundo con una condición que me importa: ida y vuelta desde Montevideo. Acercar precios, paquetes y ofertas, y decir con claridad qué está adentro del número.</p>
+        <p>Me gusta pensarlo así: el dato no se guarda en un cajón. Alguien lo usa para salir, y a la vuelta trae otro. Una familia cuenta el horario del ferry. Otra, la cuota que el crucero no mostraba en el número grande. Así esto sigue teniendo algo nuevo.</p>
+        <p class="callout">Esta nota es mía, no es un pasaje. Cuando cuento un precio, dejo el día en que lo miré, de dónde salió y qué no incluye.</p>
+        <p><a href="#nota-montevideo">Siguiente: por qué todo sale de Montevideo</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="nota-montevideo" hidden>
+      <article class="post">
+        <p class="kicker">Nicolás Fiumarelli · experiencia</p>
+        <h1>Si no sale de Montevideo, en esta bitácora no entra.</h1>
+        <p class="meta">16 de octubre de 2026</p>
+        <p>Vivo en Montevideo. La familia sale de acá y vuelve para acá. Por eso un precio “desde Miami” o “desde Madrid”, por lindo que sea, no le sirve a esta comunidad si no dice cómo se llega desde casa.</p>
+        <p>Miro tres cosas. Un avión, cuando el descuento es un pasaje. Un crucero, cuando el barco zarpa del puerto. Y el cruce, cuando alguien junta bus y ferry y hay que desarmarlo para ver qué está incluido.</p>
+        <p>El ida y vuelta no es un detalle. Es la pregunta. ¿El número es por persona? ¿Vuelves el mismo día o dejas una noche afuera? ¿El equipaje entra o es un costo que aparece al pagar? Esas preguntas me las hacía en los viajes en familia. Son las mismas que dejo por escrito.</p>
+        <p>En Instagram la cuenta es <a href="https://www.instagram.com/tipsuruguay/">@tipsuruguay</a>. Acá queda la versión larga, la que se puede releer cuando la promo ya no está en la historia.</p>
+        <p><a href="#nota-tarifa">Siguiente: cómo leo una tarifa antes de pasarla</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="nota-tarifa" hidden>
+      <article class="post">
+        <p class="kicker">Nicolás Fiumarelli · 30 de septiembre de 2026</p>
+        <h1>Lo que el precio no dice.</h1>
+        <p class="meta">Tres salidas desde Montevideo</p>
+        <p>Ese día me senté a mirar tres maneras de salir de casa. No para hacer una planilla. Para poder contárselas a alguien que está por viajar y no quiere una sorpresa en el último clic.</p>
+        <p>La primera fue Florianópolis, del 1 al 8 de febrero de 2027. SKY tenía un directo desde USD 366, ida y vuelta, por persona. La tarifa Basic incluye el bolso o el artículo personal. El carry-on y la valija se pagan aparte. Lo vi en Despegar Uruguay y lo contrasté en SKY. El número es lindo si viajas liviano. Si la familia lleva una valija cada una, ya es otro viaje.</p>
+        <p>La segunda fue Punta Cana, del 27 de marzo al 2 de abril de 2027. Arajet publicaba USD 534,41 ida y vuelta por persona, impuestos incluidos. En Basic entra un artículo personal de hasta 6 kg. No entran el carry-on, la valija, el asiento ni los cambios. Lo miré en el buscador de Arajet. Para una semana de playa, ese bolso se llena antes de salir de casa.</p>
+        <p>La tercera no era un avión. Buenos Aires, un día, publicado hasta el 30 de noviembre de 2026. Colonia Express tenía un day tour desde UYU 2.697 por persona: bus y ferry, sin hotel. Sale a las 05:00 y vuelve a las 20:00. Alcanza para caminar, comer y volver. No alcanza para dormir.</p>
+        <p>Cuando un precio dice “desde”, es un piso, no una promesa. Cuando falta un cargo que hay que pagar sí o sí, lo sumo antes de contarlo. Estas tres quedaron con el día en que las miré, porque un número sin fecha envejece mal.</p>
+        <p class="callout">Pueden cambiar o agotarse. Si vas a comprar, abre el sitio ese mismo día y confirma el total.</p>
+        <p><a href="#nota-costa">El crucero, y la cuota que no venía en el cartel</a> · <a href="#nota-cruzar">las dos formas de llegar a Buenos Aires</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="nota-costa" hidden>
+      <article class="post">
+        <p class="kicker">Crucero · tarifa para pasar</p>
+        <h1>Ocho noches en el Costa Serena, y el número que faltaba.</h1>
+        <p class="meta">Lo miré el 30 de septiembre de 2026</p>
+        <p>El Costa Serena sale de Montevideo el 1 de febrero de 2027 y vuelve el 9. Son 9 días y 8 noches, con escalas en Camboriú, Ilhabela, Río de Janeiro y Buenos Aires. Me gustó la ruta porque vuelve a casa sin tener que armar un vuelo de regreso.</p>
+        <p>La agencia publicaba desde USD 999 por persona en base doble, con pensión completa y tasas. Después vi la cuota de servicio de Costa, que es obligatoria: USD 14,50 por adulto y por noche. Ocho noches son USD 116. El mínimo que puedo contar, con honestidad, queda en <strong>USD 1.115 por adulto</strong>, camarote interno, base doble.</p>
+        <p>No incluye bebidas, excursiones, seguro ni lo que se consume a bordo. La escala del 1 de febrero de 2027 en Montevideo figura autorizada por la Administración Nacional de Puertos. El precio de la agencia lo vi en AC Viajes Uruguay.</p>
+        <p>Yo no estuve en ese barco. Vi el precio y sumé lo que el cartel dejaba afuera. Si alguien de la comunidad navega y vuelve con un dato —un camarote, un puerto, una excursión que valió la pena—, ese relato va a ser mejor que el mío.</p>
+        <p class="callout">El cupo se acaba. Si lo reservas otro día, vuelve a sumar la cuota del barco antes de decidir.</p>
+      </article>
+    </div>
+
+    <div data-seccion="nota-cruzar" hidden>
+      <article class="post">
+        <p class="kicker">Buenos Aires · lo miré el 30 de septiembre de 2026</p>
+        <h1>Dos maneras de cruzar, y no son la misma.</h1>
+        <p>Cuando alguien de Montevideo dice “me voy a Buenos Aires”, casi nunca aclara cómo vuelve. Yo ahora pregunto eso primero. Hay un día entero, de ida y vuelta, y hay una noche del otro lado. El precio cambia, y también cambia el cansancio.</p>
+        <p>La versión corta es Colonia Express. Un day tour desde UYU 2.697 por persona, publicado hasta el 30 de noviembre de 2026. El bus sale de Montevideo a las 05:00, cruza en ferry por Colonia y deja tiempo libre en Buenos Aires. A las 20:00 estás de vuelta. No hay hotel. No hay valija que facturar. Hay un día largo, un café, una caminata, y la cama propia a la noche.</p>
+        <p>Después de las 24 horas de comprado, ese pase no admite cambios ni devolución. Lo digo porque es fácil entusiasmarse un martes y arrepentirse un jueves. Si las fechas no están firmes, este no es el cruce.</p>
+        <p>La otra manera es el Francisco, de Buquebus, directo. Para el 12 al 14 de noviembre de 2026 vi UYU 3.080 por persona en clase económica, ida y vuelta. Sales de Montevideo y llegas a Buenos Aires, sin bajar en Colonia a cambiar de vehículo. Dos noches del otro lado, o al menos una cama que no es la de casa. Conviene verlo antes del 11 de noviembre.</p>
+        <p>A mí me sirve pensarlos juntos. Si solo quieres el día, el ferry de Colonia es el tip. Si quieres despertarte en Buenos Aires, el directo vale la diferencia. Los dos salen de Montevideo y los dos vuelven. Por eso están acá.</p>
+        <p class="callout">Los números son los que vi ese día. El barco y el ferry cambian de cupo. Ábrelos de nuevo antes de pagar.</p>
+        <p><a href="#nota-tarifa">Las otras salidas de ese día</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="nota-bolso" hidden>
+      <article class="post">
+        <p class="kicker">Avión · lo miré el 30 de septiembre de 2026</p>
+        <h1>El bolso que sí entra.</h1>
+        <p>Hay un momento, en la cocina, en el que el precio del pasaje parece cerrado y alguien pregunta por la valija. Ahí se desarma el entusiasmo. Por eso, cuando miro un avión, el equipaje va en la misma frase que el precio.</p>
+        <p>Florianópolis, del 1 al 8 de febrero de 2027. SKY tenía un directo desde Montevideo, desde USD 366 ida y vuelta por persona. La tarifa Basic es el bolso o el artículo personal. El carry-on no entra. La valija despachada tampoco. Lo vi en Despegar Uruguay y lo contrasté con SKY. Para una semana, si viajas solo y sabes armar una mochila, puede alcanzar. Si van tres y cada uno quiere su carry-on, suma eso antes de contar el descuento en la mesa.</p>
+        <p>Punta Cana es más estricta en la letra. Del 27 de marzo al 2 de abril de 2027, Arajet publicaba USD 534,41 ida y vuelta por persona, con impuestos y tasas. Basic: un artículo personal de hasta 6 kg. Sin carry-on, sin valija, sin asiento elegido y sin cambios. Seis kilos es un bolso chico, no una semana de playa disfrazada de equipaje de mano. Lo miré en el buscador de Arajet.</p>
+        <p>No digo que esas tarifas estén mal. Digo que el número grande es el principio de la conversación. A una familia le conviene la tarifa con valija, aunque se vea más cara en el primer pantallazo. A alguien que viaja con una mochila, el básico le ahorra de verdad.</p>
+        <p class="callout">Los dos son directos y los dos vuelven a Montevideo. Confirma el total el día que pagues: el cupo de esa tarifa se mueve.</p>
+        <p><a href="#nota-montevideo">Por qué miro solo lo que sale de casa</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="nicolas" hidden>
+      <article class="post">
+        <p class="kicker">Quién escribe</p>
+        <h1>Nicolás Fiumarelli, desde Montevideo.</h1>
+        <p>Soy ingeniero en computación, egresado de la Universidad de la República, y vivo en Montevideo. Desde 2012 trabajo con redes e internet en LACNIC. Participo en ISOC Uruguay, fui cofundador de Youth IGF Uruguay y de IoT CS LAC, y soy fellow de ICANN. Esa es la mesa del trabajo. Esta es la otra.</p>
+        <p>Durante años los viajes fueron en familia. Salir, volver, armar la valija otra vez. En algún momento me di cuenta de que lo que me hacía feliz no era encontrar el precio y dejarlo para mí. Era contarlo. Un descuento que se queda en casa se enfría. Un tip que llega a otra persona le sirve a quien sale la semana que viene.</p>
+        <p>Por eso existe Tips Uruguay. Compartimos tips, descuentos, aviones y cruceros, siempre ida y vuelta desde Montevideo. La compra se hace en el sitio de cada compañía. Si quieres el detalle de eso, está en <a href="#comunidad">la comunidad</a>.</p>
+        <p>No escribo como si hubiera tomado cada vuelo que publico. Escribo el precio que vi, el día en que lo vi, y lo que el número deja afuera. El viaje, cuando ocurre, lo cuenta quien lo hizo.</p>
+        <p><a href="#nota-compartir">La primera experiencia, en primera persona</a></p>
+      </article>
+    </div>
+
+    <div data-seccion="comunidad" hidden>
+      <article class="post">
+        <p class="kicker">La comunidad</p>
+        <h1>Gente que se pasa el dato.</h1>
+        <p>Tips Uruguay junta a quienes salen de Montevideo. Compartimos tips, descuentos, aviones y cruceros, y acercamos precios para viajes de ida y vuelta.</p>
+        <p>La compra no se hace acá. Cada enlace abre el sitio de quien vende el pasaje, el camarote o la excursión. Si hay que hablar de empresa, es una empresa de anuncios: no emitimos el boleto y no cobramos la estadía.</p>
+        <h2>Dónde miro, y dónde se reserva</h2>
+        <p>Para hoteles y actividades uso los comparadores de siempre. Para el avión, el barco o el ferry, prefiero ir también a la compañía. Estos son los sitios que vas a encontrar en las salidas.</p>
+        <ul class="sites">
+          <li><a href="https://www.booking.com/">Booking</a></li>
+          <li><a href="https://www.expedia.com/">Expedia</a></li>
+          <li><a href="https://www.hotels.com/">Hotels.com</a></li>
+          <li><a href="https://www.agoda.com/">Agoda</a></li>
+          <li><a href="https://www.despegar.com.uy/">Despegar</a></li>
+          <li><a href="https://www.civitatis.com/">Civitatis</a></li>
+          <li><a href="https://www.getyourguide.com/">GetYourGuide</a></li>
+          <li><a href="https://www.arajet.com/">Arajet</a></li>
+          <li><a href="https://www.skyairline.com/">SKY</a></li>
+          <li><a href="https://www.voegol.com.br/">GOL</a></li>
+          <li><a href="https://www.buquebus.com/">Buquebus</a></li>
+          <li><a href="https://www.coloniaexpress.com/">Colonia Express</a></li>
+          <li><a href="https://www.costacruises.com/">Costa Cruceros</a></li>
+        </ul>
+        <p>Si una salida de esta página te sirve, el botón te lleva a uno de estos sitios. El precio que yo vi puede haber cambiado: confírmalo ahí, el mismo día. Cómo funcionan los referidos está en <a href="#terminos">términos y condiciones</a>.</p>
+      </article>
+      <section class="post" data-hilos></section>
+      <section data-voces></section>
+    </div>
+
+    <div data-seccion="contacto" hidden>
+      <article class="post">
+        <p class="kicker">Escribir</p>
+        <h1>Si viste un precio, cuéntamelo.</h1>
+        <p>Busco descuentos de avión y de crucero que salgan de Montevideo y vuelvan a Montevideo. Si encontraste uno, o si un precio de esta página cambió, escríbeme por <a href="https://www.instagram.com/tipsuruguay/">@tipsuruguay</a>.</p>
+        <p>Con el destino, las fechas y el día en que lo viste alcanza. Si sabes qué incluye el equipaje, mejor. Así puedo contarlo con el mismo cuidado con el que miro los míos.</p>
+        <p>También puedes escribirme si viajaste con una de estas salidas y quieres dejar cómo te fue. Esa parte, la de volver y contar, es la que más me gusta de esta comunidad.</p>
+      </article>
+    </div>
+
+    <div data-seccion="terminos" hidden>
+      <article class="post">
+        <p class="kicker">Términos</p>
+        <h1>Términos y condiciones</h1>
+        <p>Tips Uruguay es un sitio de tips y de anuncios. Lo escribe Nicolás Fiumarelli, desde Montevideo. Acá se comparten precios vistos en otros sitios. Acá no se vende el pasaje, el camarote, el hotel ni la excursión.</p>
+        <h2>Qué compro, y con quién</h2>
+        <p>Cuando aprietas “precio final”, sales de esta página y entras al sitio de la compañía o de la agencia. El pago, la reserva, los cambios, las cancelaciones y el equipaje se resuelven ahí. El contrato es entre tú y esa empresa. Yo no emito el boleto, no cobro la estadía y no administro tu reserva.</p>
+        <h2>Referidos</h2>
+        <p>Algunos enlaces son de referido. Si reservas a través de ellos, la plataforma puede pagarme una comisión. Esa comisión la paga la plataforma. No es un recargo que yo sume al precio que ves. El total que vale es el que confirma el sitio el día que pagas.</p>
+        <p>Así explican su propio sistema:</p>
+        <ul class="sites">
+          <li><a href="https://www.booking.com/affiliate-program/v2/index.html">Booking, cómo funciona el programa de afiliados</a></li>
+          <li><a href="https://partnerships.booking.com/">Booking, el programa para partners</a></li>
+          <li><a href="https://help.affiliates.expediagroup.com/hc/en-us/articles/13164069784727-How-do-I-create-Affiliate-Links">Expedia Group, cómo se arma un enlace de afiliado</a></li>
+          <li><a href="https://partners.agoda.com/">Agoda, programa de afiliados</a></li>
+          <li><a href="https://www.civitatis.com/es/afiliados/landing-preguntas-frecuentes/">Civitatis, preguntas del programa de afiliados</a></li>
+          <li><a href="https://partner.getyourguide.com/en/home">GetYourGuide, programa de partners</a></li>
+        </ul>
+        <p>Hotels.com entra en el mismo programa de Expedia Group. Despegar, SKY, Arajet, GOL, Buquebus, Colonia Express y Costa Cruceros se abren en su propio sitio. Ahí rigen las condiciones de cada uno.</p>
+        <h2>Precios</h2>
+        <p>Un precio de esta página es el que vi en la fecha que dice la salida. Puede cambiar, agotarse o dejar de existir. “Desde” es un piso, no un total cerrado. Lo que no estaba incluido —valija, cuota del barco, bebidas, asiento— lo anoto cuando lo vi. Confírmalo en el sitio antes de pagar.</p>
+        <h2>Responsabilidad</h2>
+        <p>No me hago responsable de la reserva, del precio final, de la disponibilidad, de los cambios de itinerario, de las demoras, de lo que cobre la compañía ni de lo que diga su sitio. Tampoco de los comentarios que deja la gente: son opiniones de quienes escriben, no una promesa mía.</p>
+        <p>Si algo no cierra, la consulta es con quien te vendió el viaje. Si quieres avisarme que un número cambió, escríbeme por <a href="https://www.instagram.com/tipsuruguay/">@tipsuruguay</a>.</p>
+      </article>
+    </div>
+
+    <div data-seccion="salida" hidden>
+      <article class="post" data-ficha></article>
+      <p><a href="#ofertas">Volver a las ofertas</a></p>
+    </div>
+
     <footer>
       <span>Tips Uruguay · Nicolás Fiumarelli</span>
-      <a href="contacto.html">Enviar un tip</a>
+      <a href="#contacto">Enviar un tip</a>
+      <a href="#terminos">Términos</a>
+      <p class="credito-jazz">Jazz: Airport Lounge, Kevin MacLeod (incompetech.com). <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
     </footer>
   </div>
   <script src="js/site.js"></script>

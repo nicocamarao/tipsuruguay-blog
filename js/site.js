@@ -56,6 +56,8 @@ async function cargarOfertas() {
 
 let filtroMes = "";
 let vocesGlobal = null;
+let ofertasGlobal = [];
+let plataformasGlobal = null;
 
 function ofertaVisible(oferta, hoy, tipo) {
   const pais = paisActivo();
@@ -105,7 +107,7 @@ function tarjeta(oferta) {
   const pieza = document.createElement("article");
   pieza.className = "card";
   const enlace = document.createElement("a");
-  enlace.href = `${root}oferta.html?id=${encodeURIComponent(oferta.id)}`;
+  enlace.href = `#salida/${encodeURIComponent(oferta.id)}`;
   const foto = oferta.imagen
     ? `<img class="card-foto" src="${root}${oferta.imagen}" alt="${oferta.titulo}">`
     : "";
@@ -381,12 +383,11 @@ function armarMapa(ofertas) {
   document.body.append(boton, panel);
 }
 
-async function mostrarFicha(plataformas) {
+function pintarFicha(id) {
   const ficha = document.querySelector("[data-ficha]");
-  if (!ficha) return;
-  const id = new URLSearchParams(location.search).get("id");
-  const ofertas = await cargarOfertas();
-  const oferta = ofertas.find((item) => item.id === id);
+  const plataformas = plataformasGlobal;
+  if (!ficha || !plataformas) return;
+  const oferta = (ofertasGlobal || []).find((item) => item.id === id);
   if (!oferta) {
     ficha.textContent = "No encontré esa salida.";
     return;
@@ -449,7 +450,7 @@ function armarCubo(ofertas) {
   let visible = 0;
   const pintar = () => {
     cubo.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
-    enlace.href = `${root}oferta.html?id=${encodeURIComponent(seis[visible].id)}`;
+    enlace.href = `#salida/${encodeURIComponent(seis[visible].id)}`;
     enlace.setAttribute("aria-label", seis[visible].titulo);
     titulo.textContent = seis[visible].titulo;
   };
@@ -478,11 +479,15 @@ function armarCubo(ofertas) {
   const reducido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (reducido) return;
   let timer = window.setInterval(girar, 3400);
-  escena.addEventListener("mouseenter", () => window.clearInterval(timer));
-  escena.addEventListener("mouseleave", () => {
+  const frenar = () => window.clearInterval(timer);
+  const seguir = () => {
     window.clearInterval(timer);
     timer = window.setInterval(girar, 3400);
-  });
+  };
+  escena.addEventListener("mouseenter", frenar);
+  escena.addEventListener("mouseleave", seguir);
+  escena.addEventListener("focusin", frenar);
+  escena.addEventListener("focusout", seguir);
   window.setTimeout(girar, 1200);
 }
 
@@ -667,16 +672,21 @@ function armarFiltros(ofertas) {
 function armarJazz() {
   if (document.querySelector(".jazz-launcher")) return;
   const audio = document.createElement("audio");
-  audio.src = `${root}audio/off-to-osaka.mp3`;
+  audio.src = `${root}audio/airport-lounge.mp3`;
   audio.loop = true;
-  audio.preload = "none";
+  audio.preload = "auto";
   audio.volume = 0.45;
   const boton = document.createElement("button");
   boton.type = "button";
   boton.className = "mapa-launcher jazz-launcher";
-  boton.textContent = "Jazz";
-  boton.title = "Off to Osaka, Kevin MacLeod, incompetech.com, CC BY 3.0";
-  const sonar = () => audio.play().then(() => boton.classList.add("activa")).catch(() => {});
+  boton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.2 7a7 7 0 0 1 0 10"/></svg>';
+  boton.setAttribute("aria-label", "Sonido");
+  boton.title = "Airport Lounge, Kevin MacLeod, incompetech.com, CC BY 3.0";
+  const pintar = (sonando) => {
+    boton.classList.toggle("activa", sonando);
+    boton.setAttribute("aria-pressed", sonando ? "true" : "false");
+  };
+  const sonar = () => audio.play().then(() => pintar(true)).catch(() => pintar(false));
   boton.addEventListener("click", (evento) => {
     evento.stopPropagation();
     if (audio.paused) {
@@ -685,23 +695,41 @@ function armarJazz() {
     } else {
       audio.pause();
       guardarCookie("tu_jazz", "off");
-      boton.classList.remove("activa");
+      pintar(false);
     }
   });
   document.body.append(audio, boton);
-  document.querySelectorAll("footer").forEach((pie) => {
-    if (pie.querySelector(".credito-jazz")) return;
-    const linea = document.createElement("p");
-    linea.className = "credito-jazz";
-    linea.innerHTML = 'Jazz: Off to Osaka, Kevin MacLeod (incompetech.com). <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.';
-    pie.append(linea);
-  });
-  if (leerCookie("tu_jazz") === "off") return;
+  if (leerCookie("tu_jazz") === "off") {
+    pintar(false);
+    return;
+  }
+  sonar();
   const arrancar = () => {
+    if (leerCookie("tu_jazz") === "off") return;
     sonar();
-    document.removeEventListener("pointerdown", arrancar);
   };
   document.addEventListener("pointerdown", arrancar);
+}
+
+function seccionActual() {
+  const limpio = decodeURIComponent((location.hash || "#inicio").slice(1));
+  if (limpio.startsWith("salida/")) return "salida";
+  const conocidas = ["inicio", "ofertas", "aviones", "cruceros", "bitacora", "nicolas", "comunidad", "contacto", "terminos", "nota-compartir", "nota-montevideo", "nota-tarifa", "nota-costa", "nota-cruzar", "nota-bolso", "salida"];
+  return conocidas.includes(limpio) ? limpio : "inicio";
+}
+
+function mostrarSeccion(id) {
+  document.querySelectorAll("[data-seccion]").forEach((nodo) => {
+    nodo.hidden = nodo.dataset.seccion !== id;
+  });
+  const marca = id === "salida" ? "ofertas" : id.startsWith("nota-") ? "bitacora" : id;
+  document.querySelectorAll("[data-ir]").forEach((enlace) => {
+    enlace.classList.toggle("aqui", enlace.getAttribute("data-ir") === marca);
+  });
+  if (id === "salida") pintarFicha(decodeURIComponent((location.hash || "").split("/")[1] || ""));
+  const menu = document.querySelector("details.menu");
+  if (menu) menu.open = false;
+  window.scrollTo(0, 0);
 }
 
 function armarCielo() {
@@ -724,11 +752,14 @@ async function iniciar() {
       fetch(`${root}data/comunidad/voces.json`).then((respuesta) => respuesta.json())
     ]);
     vocesGlobal = voces;
+    ofertasGlobal = ofertas;
+    plataformasGlobal = plataformas;
     armarFiltros(ofertas);
     pintarOfertas(ofertas);
     armarCubo(ofertas);
     armarChat(ofertas, respuestas, plataformas);
-    await mostrarFicha(plataformas);
+    mostrarSeccion(seccionActual());
+    window.addEventListener("hashchange", () => mostrarSeccion(seccionActual()));
   } catch (error) {
     console.error(error);
   }
