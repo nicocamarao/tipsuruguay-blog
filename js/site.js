@@ -59,9 +59,9 @@ let vocesGlobal = null;
 let ofertasGlobal = [];
 let plataformasGlobal = null;
 
-function ofertaVisible(oferta, hoy, tipo) {
+function ofertaVisible(oferta, hoy, tipo, mes) {
   const pais = paisActivo();
-  const mesOk = !filtroMes || (oferta.salida || "").slice(0, 7) === filtroMes;
+  const mesOk = !mes || (oferta.salida || "").slice(0, 7) === mes;
   return vigente(oferta, hoy) && (!tipo || oferta.tipo === tipo) && (!pais || (oferta.paises || []).includes(pais)) && mesOk;
 }
 
@@ -129,12 +129,17 @@ function pintarOfertas(ofertas) {
   const hoy = hoyLocal();
   document.querySelectorAll("[data-ofertas]").forEach((contenedor) => {
     const tipo = contenedor.dataset.tipo || "";
-    const lista = ofertas.filter((oferta) => ofertaVisible(oferta, hoy, tipo));
+    const mes = contenedor.dataset.mes || "";
+    const lista = ofertas.filter((oferta) => ofertaVisible(oferta, hoy, tipo, mes));
     contenedor.replaceChildren();
     if (!lista.length) {
-      contenedor.textContent = paisActivo()
-        ? `No hay salidas para ${paisActivo()} en este momento.`
-        : "No hay salidas en esta sección en este momento.";
+      const aviso = document.createElement("p");
+      aviso.textContent = paisActivo()
+        ? `No hay salidas de esta sección para ${paisActivo()}.`
+        : mes
+          ? "No hay salidas de esta sección en esa fecha."
+          : "No hay salidas en esta sección en este momento.";
+      contenedor.append(aviso);
       return;
     }
     lista.forEach((oferta) => contenedor.append(tarjeta(oferta)));
@@ -338,8 +343,8 @@ function armarMapa(ofertas) {
   const estado = panel.querySelector(".mapa-estado");
   const pintarEstado = () => {
     estado.textContent = paisActivo()
-      ? `Mostrando ${paisActivo()}. Toca ese país otra vez para ver todas las salidas.`
-      : "Pasa el mouse para pintar un país. Un clic filtra las salidas.";
+      ? `Mostrando ${paisActivo()}. Un doble clic acerca ese país y abre sus salidas.`
+      : "Pasa el mouse para pintar un país. Un clic filtra. Un doble clic acerca y abre las salidas.";
   };
   pintarEstado();
   let mapa = null;
@@ -352,24 +357,43 @@ function armarMapa(ofertas) {
     await cargarLeaflet();
     if (!mapa) {
       const lienzo = panel.querySelector(".mapa-lienzo");
-      mapa = window.L.map(lienzo, { minZoom: 2, maxZoom: 6 }).setView([-32.5, -56], 2);
+      mapa = window.L.map(lienzo, { minZoom: 2, maxZoom: 8, doubleClickZoom: true }).setView([-32.5, -56], 2);
       window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "&copy; OpenStreetMap",
-        maxZoom: 6
+        maxZoom: 8
       }).addTo(mapa);
       const datos = await fetch(`${root}data/mapa/paises.geojson`).then((respuesta) => respuesta.json());
       capa = window.L.geoJSON(datos, {
         style: estiloPais,
         onEachFeature(feature, layer) {
-          layer.on("mouseover", () => layer.setStyle({ fillColor: "#0b57f0", fillOpacity: 0.55, weight: 1.5 }));
-          layer.on("mouseout", () => capa.resetStyle(layer));
-          layer.on("click", () => {
-            const pais = feature.properties.pais;
-            if (paisActivo() === pais) borrarCookie("tu_pais");
-            else guardarCookie("tu_pais", pais);
+          let espera = 0;
+          const aplicar = (pais) => {
+            guardarCookie("tu_pais", pais);
             capa.setStyle(estiloPais);
             pintarOfertas(ofertas);
             pintarEstado();
+          };
+          layer.on("mouseover", () => layer.setStyle({ fillColor: "#0b57f0", fillOpacity: 0.55, weight: 1.5 }));
+          layer.on("mouseout", () => capa.resetStyle(layer));
+          layer.on("click", () => {
+            window.clearTimeout(espera);
+            const pais = feature.properties.pais;
+            espera = window.setTimeout(() => {
+              if (paisActivo() === pais) borrarCookie("tu_pais");
+              else guardarCookie("tu_pais", pais);
+              capa.setStyle(estiloPais);
+              pintarOfertas(ofertas);
+              pintarEstado();
+            }, 260);
+          });
+          layer.on("dblclick", (evento) => {
+            window.L.DomEvent.stopPropagation(evento);
+            window.clearTimeout(espera);
+            const pais = feature.properties.pais;
+            aplicar(pais);
+            if (layer.getBounds) mapa.fitBounds(layer.getBounds(), { padding: [24, 24], maxZoom: 6, animate: true });
+            if (location.hash !== "#ofertas") location.hash = "#ofertas";
+            else mostrarSeccion("ofertas");
           });
         }
       }).addTo(mapa);
@@ -657,7 +681,7 @@ function armarFiltros(ofertas) {
       boton.type = "button";
       boton.textContent = chip.texto;
       boton.addEventListener("click", () => {
-        if (chip.clave === "mes") filtroMes = chip.valor;
+        if (chip.clave === "mes") contenedor.dataset.mes = chip.valor;
         if (chip.clave === "tipo") contenedor.dataset.tipo = chip.valor;
         barra.querySelectorAll("button").forEach((item) => item.classList.remove("activa"));
         boton.classList.add("activa");
@@ -714,7 +738,7 @@ function armarJazz() {
 function seccionActual() {
   const limpio = decodeURIComponent((location.hash || "#inicio").slice(1));
   if (limpio.startsWith("salida/")) return "salida";
-  const conocidas = ["inicio", "ofertas", "aviones", "cruceros", "bitacora", "nicolas", "comunidad", "contacto", "terminos", "nota-compartir", "nota-montevideo", "nota-tarifa", "nota-costa", "nota-cruzar", "nota-bolso", "salida"];
+  const conocidas = ["inicio", "ofertas", "aviones", "cruceros", "bitacora", "fotos", "nicolas", "comunidad", "contacto", "terminos", "nota-compartir", "nota-montevideo", "nota-tarifa", "nota-costa", "nota-cruzar", "nota-bolso", "salida"];
   return conocidas.includes(limpio) ? limpio : "inicio";
 }
 
