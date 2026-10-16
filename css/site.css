@@ -76,17 +76,17 @@ h1, h2, h3 { font-family: var(--font); font-weight: 800; line-height: 1.12; lett
 .wrap { width: min(1040px, calc(100% - 28px)); margin: 0 auto; position: relative; z-index: 1; }
 .top {
   position: sticky;
-  top: 0;
+  top: 12px;
   z-index: 15;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  margin: 0 -14px;
-  padding: 12px 14px;
-  background: rgba(231, 243, 255, 0.9);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(201, 218, 246, 0.9);
+  margin: 12px 0 20px;
+  padding: 10px 16px 10px 10px;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 12px 28px rgba(23, 35, 63, 0.1);
 }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; min-width: 0; }
 .brand img { width: 88px; height: 88px; border-radius: 50%; flex: none; box-shadow: var(--shadow); transition: transform 0.45s ease; }
