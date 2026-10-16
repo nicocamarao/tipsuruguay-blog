@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=Outfit:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;700;800&family=Sora:wght@500;600;700&display=swap");
 
 :root {
   --ink: #17233f;
@@ -13,8 +13,8 @@
   --blue: #0b57f0;
   --blue-deep: #083eb8;
   --shadow: 0 14px 32px rgba(11, 87, 240, 0.12);
-  --font: "Nunito", "Trebuchet MS", "Segoe UI", sans-serif;
-  --font-boton: "Outfit", "Trebuchet MS", sans-serif;
+  --font: "Figtree", "Avenir Next", "Verdana", sans-serif;
+  --font-boton: "Sora", "Avenir Next", sans-serif;
 }
 
 * { box-sizing: border-box; }
