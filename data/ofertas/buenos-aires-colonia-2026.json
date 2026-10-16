@@ -1,0 +1,48 @@
+{
+  "id": "buenos-aires-colonia-2026",
+  "imagen": "img/ofertas/buenos-aires-colonia.jpg",
+  "titulo": "Buenos Aires en el día, vía Colonia",
+  "tipo": "paquete",
+  "origen": "Montevideo",
+  "destino": "Buenos Aires",
+  "salida": "2026-11-30",
+  "regreso": "2026-11-30",
+  "vigencia_hasta": "2026-11-30",
+  "precio": "UYU 2.236",
+  "precio_nota": "por persona, todos los días. Ida 05:00, vuelta 20:00.",
+  "incluye": "Bus Montevideo–Colonia–Montevideo y ferry. Tiempo libre en la ciudad.",
+  "no_incluye": "Alojamiento. Pasadas 24 horas de la compra no admite cambios ni devolución.",
+  "fuente": "Colonia Express Uruguay, day tour Buenos Aires desde Montevideo. Consultada el 16 de octubre de 2026. El 30 de septiembre figuraba en UYU 2.697.",
+  "url": "https://www.coloniaexpress.com/",
+  "consultado": "2026-10-16",
+  "palabras": [
+    "colonia",
+    "colonia express",
+    "day tour",
+    "buenos aires",
+    "ferry"
+  ],
+  "paises": [
+    "Uruguay",
+    "Argentina"
+  ],
+  "agente": "Buenos Aires",
+  "plataforma": "Colonia Express",
+  "equipaje": [
+    {
+      "icono": "bus",
+      "estado": "si",
+      "texto": "Bus y ferry, ida y vuelta el mismo día"
+    },
+    {
+      "icono": "cama",
+      "estado": "no",
+      "texto": "Sin hotel"
+    },
+    {
+      "icono": "bebida",
+      "estado": "no",
+      "texto": "Sin vianda"
+    }
+  ]
+}

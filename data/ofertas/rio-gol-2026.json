@@ -1,0 +1,55 @@
+{
+  "id": "rio-gol-2026",
+  "imagen": "img/ofertas/rio.jpg",
+  "titulo": "Río de Janeiro directo con GOL",
+  "tipo": "avion",
+  "origen": "Montevideo",
+  "destino": "Río de Janeiro",
+  "salida": "2026-10-06",
+  "regreso": "2026-10-13",
+  "vigencia_hasta": "2026-10-05",
+  "precio": "USD 258,57",
+  "precio_nota": "desde, ida y vuelta por persona, a Galeão",
+  "incluye": "Como mínimo mochila de hasta 10 kg. La oferta no identificaba la familia tarifaria.",
+  "no_incluye": "Valija despachada. El equipaje de cabina había que confirmarlo al pagar.",
+  "fuente": "GOL Uruguay. Consultada el 30 de septiembre de 2026.",
+  "url": "https://www.voegol.com.br/",
+  "consultado": "2026-09-30",
+  "palabras": [
+    "rio de janeiro",
+    "río de janeiro",
+    "galeao",
+    "galeão",
+    "gol"
+  ],
+  "paises": [
+    "Uruguay",
+    "Brasil"
+  ],
+  "foto": {
+    "src": "img/viajeras/copacabana.jpg",
+    "nombre": "Elena Sosa",
+    "pais": "Uruguay",
+    "texto": "Copacabana, en un viaje anterior a Río. La dejo en la oferta de GOL.",
+    "credito": "Foto de Adam Jones en Wikimedia Commons, CC BY-SA 2.0. Copacabana, Río de Janeiro."
+  },
+  "agente": "Río de Janeiro",
+  "plataforma": "GOL",
+  "equipaje": [
+    {
+      "icono": "personal",
+      "estado": "si",
+      "texto": "Mochila de hasta 10 kg"
+    },
+    {
+      "icono": "cabina",
+      "estado": "no",
+      "texto": "Sin carry-on"
+    },
+    {
+      "icono": "valija",
+      "estado": "no",
+      "texto": "Sin valija despachada"
+    }
+  ]
+}

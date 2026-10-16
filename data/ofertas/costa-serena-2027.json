@@ -1,0 +1,50 @@
+{
+  "id": "costa-serena-2027",
+  "imagen": "img/ofertas/costa-serena.jpg",
+  "titulo": "Costa Serena, ocho noches desde Montevideo",
+  "tipo": "crucero",
+  "origen": "Montevideo",
+  "destino": "Camboriú, Ilhabela, Río de Janeiro y Buenos Aires",
+  "salida": "2027-02-01",
+  "regreso": "2027-02-09",
+  "vigencia_hasta": "2027-01-31",
+  "precio": "USD 1.115",
+  "precio_nota": "mínimo calculado por adulto, camarote interno, base doble",
+  "incluye": "La agencia publicaba desde USD 999 con pensión completa y tasas. Se sumaron USD 116 de cuota de servicio obligatoria de Costa: USD 14,50 por adulto y por noche.",
+  "no_incluye": "Bebidas, excursiones, seguro y consumos personales.",
+  "fuente": "Tarifa vista en AC Viajes Uruguay. Cuota en Costa Cruceros. Escala del 1 de febrero de 2027 autorizada por la Administración Nacional de Puertos. Consultada el 30 de septiembre de 2026.",
+  "url": "https://www.costacruises.com/",
+  "consultado": "2026-09-30",
+  "palabras": [
+    "costa",
+    "serena",
+    "crucero",
+    "camboriu",
+    "camboriú",
+    "ilhabela"
+  ],
+  "paises": [
+    "Uruguay",
+    "Brasil",
+    "Argentina"
+  ],
+  "agente": "Costa Serena",
+  "plataforma": "Costa Cruceros",
+  "equipaje": [
+    {
+      "icono": "cama",
+      "estado": "si",
+      "texto": "Camarote interno, base doble"
+    },
+    {
+      "icono": "comida",
+      "estado": "si",
+      "texto": "Pensión completa"
+    },
+    {
+      "icono": "bebida",
+      "estado": "no",
+      "texto": "Sin bebidas ni excursiones"
+    }
+  ]
+}

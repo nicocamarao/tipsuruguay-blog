@@ -1,0 +1,51 @@
+{
+  "id": "florianopolis-sky-2027-02-26",
+  "titulo": "Florianópolis, 26 al 28 de febrero",
+  "tipo": "avion",
+  "origen": "Montevideo",
+  "destino": "Florianópolis",
+  "salida": "2027-02-26",
+  "regreso": "2027-02-28",
+  "vigencia_hasta": "2027-02-25",
+  "precio": "USD 204",
+  "precio_nota": "desde, ida y vuelta por persona, económica",
+  "incluye": "Tarifa publicada como desde. En Basic de SKY el bolso personal es lo que suele entrar.",
+  "no_incluye": "Carry-on y valija despachada, salvo que la tarifa elegida al pagar los sume.",
+  "fuente": "Vista en la página de SKY, ruta Montevideo–Florianópolis, el 16 de octubre de 2026. Es un desde, no un total cerrado.",
+  "url": "https://www.skyairline.com/flights/es/vuelos-desde-montevideo-a-florianopolis",
+  "consultado": "2026-10-16",
+  "palabras": [
+    "florianopolis",
+    "florianópolis",
+    "floripa",
+    "sky",
+    "febrero"
+  ],
+  "paises": [
+    "Uruguay",
+    "Brasil"
+  ],
+  "agente": "Florianópolis",
+  "plataforma": "SKY",
+  "equipaje": [
+    {
+      "icono": "personal",
+      "estado": "si",
+      "texto": "Bolso o artículo personal en Basic"
+    },
+    {
+      "icono": "cabina",
+      "estado": "no",
+      "texto": "Sin carry-on"
+    },
+    {
+      "icono": "valija",
+      "estado": "no",
+      "texto": "Sin valija despachada"
+    }
+  ],
+  "likes": {
+    "corazon": 14,
+    "idea": 6
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "Booking": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.booking.com/searchresults.html?ss={destino}&checkin={salida}&checkout={regreso}&aid={id}"
+  },
+  "Expedia": {
+    "id": "blablabla1234",
+    "plantilla": "https://www.expedia.com/Hotel-Search?destination={destino}&startDate={salida}&endDate={regreso}&affcid={id}"
+  },
+  "Hotels.com": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.hotels.com/Hotel-Search?destination={destino}&startDate={salida}&endDate={regreso}&rffrid={id}"
+  },
+  "Agoda": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.agoda.com/search?city={destino}&checkIn={salida}&checkOut={regreso}&cid={id}"
+  },
+  "Despegar": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.despegar.com.uy/accommodations/results?destination={destino}&checkin={salida}&checkout={regreso}&mkte={id}"
+  },
+  "Civitatis": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.civitatis.com/es/buscar/?q={destino}&aid={id}"
+  },
+  "GetYourGuide": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.getyourguide.com/s/?q={destino}&partner_id={id}"
+  },
+  "SKY": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.skyairline.com/es/uruguay?origin={origen}&destination={destino}&departure={salida}&return={regreso}&partner={id}"
+  },
+  "Arajet": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.arajet.com/?origin={origen}&destination={destino}&departure={salida}&return={regreso}&partner={id}"
+  },
+  "GOL": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.voegol.com.br/nh/es?origin={origen}&destination={destino}&departure={salida}&return={regreso}&partner={id}"
+  },
+  "Buquebus": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.buquebus.com/?origen={origen}&destino={destino}&ida={salida}&vuelta={regreso}&partner={id}"
+  },
+  "Colonia Express": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.coloniaexpress.com/?origen={origen}&destino={destino}&ida={salida}&vuelta={regreso}&partner={id}"
+  },
+  "Costa Cruceros": {
+    "id": "NICOFIUMA",
+    "plantilla": "https://www.costacruises.com/?destination={destino}&departure={salida}&return={regreso}&partner={id}"
+  }
+}

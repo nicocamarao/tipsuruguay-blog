@@ -1,0 +1,957 @@
+{
+  "testimonios": [
+    {
+      "nombre": "Graciela Motta",
+      "pais": "Uruguay",
+      "texto": "Por fin alguien de Montevideo que dice qué no incluye el pasaje, no solo el número grande.",
+      "id": "t1",
+      "cuando": "junio 2026",
+      "likes": 12
+    },
+    {
+      "nombre": "Héctor Luján",
+      "pais": "Uruguay",
+      "texto": "Uso la ronda para el cruce a Buenos Aires. Si no sale de casa y no vuelve en el mismo viaje, no me sirve.",
+      "id": "t2",
+      "cuando": "julio 2026",
+      "likes": 17
+    },
+    {
+      "nombre": "Beatriz Colman",
+      "pais": "Uruguay",
+      "texto": "El crucero lo leí distinto después de ver la cuota de servicio sumada. Eso es un tip de verdad.",
+      "id": "t3",
+      "cuando": "agosto 2026",
+      "likes": 22
+    },
+    {
+      "nombre": "Rodrigo Pacheco",
+      "pais": "Uruguay",
+      "texto": "Comparto los descuentos con mi hermana. Un precio que se queda en el grupo de la familia no circula.",
+      "id": "t4",
+      "cuando": "septiembre 2026",
+      "likes": 27
+    },
+    {
+      "nombre": "Silvia Quiroga",
+      "pais": "Argentina",
+      "texto": "Leo desde Rosario. Me sirven las salidas de Montevideo cuando cruzo y sigo viaje.",
+      "id": "t5",
+      "cuando": "octubre 2026",
+      "likes": 32
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "c1",
+      "nombre": "Ana Bentancur",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "La Basic de SKY es solo el bolso. Si llevan carry-on, súmenlo antes de emocionarse con los 366.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 3,
+      "tipo": "resena"
+    },
+    {
+      "id": "c2",
+      "nombre": "Mateo Rodríguez",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Floripa en febrero se llena. Yo miraría el precio otra vez una semana antes de la salida.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 10,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c3",
+      "nombre": "Magdalena Ortiz",
+      "pais": "Argentina",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Ida y vuelta desde Montevideo, directo. Eso es lo que me cierra de esta tarifa.",
+      "respondeA": "c2",
+      "cuando": "agosto 2026",
+      "likes": 17,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c4",
+      "nombre": "Valentina Costa",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "¿Alguien confirmó si el artículo personal entra abajo del asiento?",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 24,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c5",
+      "nombre": "Joaquín Silva",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "El dato está consultado el 30 de septiembre. No lo tomaría como precio de hoy.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 31,
+      "tipo": "resena"
+    },
+    {
+      "id": "c6",
+      "nombre": "Camila Ferreira",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Para una semana alcanza si viajan livianos. Si no, la valija cambia la cuenta.",
+      "respondeA": "c5",
+      "cuando": "junio 2026",
+      "likes": 9,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c7",
+      "nombre": "Felipe Techera",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Me anoté el 1 de febrero de 2027 y la vuelta el 8.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 16,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c8",
+      "nombre": "Florencia Núñez",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Compré en la web de Arajet en julio. Elegí las fechas, la tarifa Basic y el pago pasó en un solo paso.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 23,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c9",
+      "nombre": "Ignacio Pereira",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "El sitio de Arajet me dejó armar el ida y vuelta sin crear una cuenta larga. El correo de la reserva llegó enseguida.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 30,
+      "tipo": "resena"
+    },
+    {
+      "id": "c10",
+      "nombre": "Martina Díaz",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "La compra fue simple. Lo que miré dos veces fue el equipaje: en Basic no entra el carry-on, y eso se ve antes de pagar.",
+      "respondeA": "c9",
+      "cuando": "octubre 2026",
+      "likes": 8,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c11",
+      "nombre": "Santiago Olivera",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Volví a abrir el buscador al día siguiente y el precio seguía. No se trabó ni el pago ni el comprobante.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 15,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c12",
+      "nombre": "Emilia Cabrera",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Pagué con tarjeta y Arajet mostró el total con tasas antes de confirmar. Eso me dejó tranquila.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 22,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c13",
+      "nombre": "Bruno Martínez",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "El cargo de la tarjeta coincidió con lo que decía la pantalla. La compra, en sí, fue corta.",
+      "respondeA": "c12",
+      "cuando": "agosto 2026",
+      "likes": 29,
+      "tipo": "resena"
+    },
+    {
+      "id": "c14",
+      "nombre": "Facundo Alegre",
+      "pais": "Argentina",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Desde Rosario entré a Arajet, puse Montevideo y Punta Cana, y el formulario no pidió nada raro.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 7,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c15",
+      "nombre": "Paula González",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "El day tour sale 05:00 de Montevideo y vuelve 20:00. No es para dormir allá.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 14,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c16",
+      "nombre": "Diego Suárez",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "2.697 pesos por persona, bus más ferry. Sin alojamiento, y después de 24 horas no hay cambio.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 21,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c17",
+      "nombre": "Carolina López",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "Colonia Express lo tenía publicado hasta el 30 de noviembre de 2026.",
+      "respondeA": "c16",
+      "cuando": "julio 2026",
+      "likes": 28,
+      "tipo": "resena"
+    },
+    {
+      "id": "c18",
+      "nombre": "Andrés Vidal",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "Es la opción para un día, no para un finde. El Francisco es otra cosa.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 6,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c19",
+      "nombre": "Sofía Romero",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "Lleven abrigo para el río. El precio no incluye nada para comer.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 13,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c20",
+      "nombre": "Lucas Pereyra",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "A mí me sirve si quiero Buenos Aires y volver a dormir en casa.",
+      "respondeA": "c19",
+      "cuando": "octubre 2026",
+      "likes": 20,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c21",
+      "nombre": "Elena Sosa",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "Confirmen cupo: es un desde, no un total cerrado.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 27,
+      "tipo": "resena"
+    },
+    {
+      "id": "c22",
+      "nombre": "Paula Benítez",
+      "pais": "Argentina",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "El Francisco, directo, 12 al 14 de noviembre. 3.080 pesos en económica.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 5,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c23",
+      "nombre": "Martín Acosta",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "Si van el 12, no lo dejen para la semana del viaje. En noviembre el barco se llena.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 12,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c24",
+      "nombre": "Julieta Fernández",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "No mezcla bus. Sale de Montevideo y llega a Buenos Aires.",
+      "respondeA": "c23",
+      "cuando": "septiembre 2026",
+      "likes": 19,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c25",
+      "nombre": "Pedro Álvarez",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "Buquebus avisa cupos limitados. Yo lo abriría de nuevo antes de pagar.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 26,
+      "tipo": "resena"
+    },
+    {
+      "id": "c26",
+      "nombre": "Noelia Castro",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "Para dos noches me cierra más que el day tour.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 4,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c27",
+      "nombre": "Gabriel Méndez",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "Clase económica. Si quieren camarote o butaca distinta, ya es otro precio.",
+      "respondeA": "c26",
+      "cuando": "julio 2026",
+      "likes": 11,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c28",
+      "nombre": "Agustina Píriz",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "La agencia decía 999. Con la cuota de Costa, 14,50 por noche, el mínimo queda en 1.115.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 18,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c29",
+      "nombre": "Hernán Duarte",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "Sale el 1 de febrero de 2027 de Montevideo y vuelve el 9. Ocho noches.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 25,
+      "tipo": "resena"
+    },
+    {
+      "id": "c30",
+      "nombre": "Cecilia Ramos",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "Escalas: Camboriú, Ilhabela, Río y Buenos Aires. Bebidas y excursiones van aparte.",
+      "respondeA": "c29",
+      "cuando": "octubre 2026",
+      "likes": 3,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c31",
+      "nombre": "Tomás Herrera",
+      "pais": "Argentina",
+      "oferta": "costa-serena-2027",
+      "texto": "Esa cuota de servicio es obligatoria. Si no la suman, el cartel miente.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 10,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c32",
+      "nombre": "Omar Beltrán",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "Camarote interno, base doble. Un solo viajero no entra en ese número.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 17,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c33",
+      "nombre": "Jimena Correa",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "La escala del 1 de febrero figura autorizada en el puerto.",
+      "respondeA": "c32",
+      "cuando": "agosto 2026",
+      "likes": 24,
+      "tipo": "resena"
+    },
+    {
+      "id": "c34",
+      "nombre": "Pablo Etcheverry",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "No incluye seguro. Para un crucero yo lo cotizaría aparte.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 31,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c35",
+      "nombre": "Lucía Varela",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "Yo lo cerraría en enero, antes de que empiecen las clases y suba el camarote.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 9,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c36",
+      "nombre": "Tomás Godoy",
+      "pais": "Uruguay",
+      "oferta": "rio-gol-2026",
+      "texto": "Esa tarifa de GOL a Galeão ya venció el 5 de octubre. La dejo para no repetir el error.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 16,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c37",
+      "nombre": "Marina Seijas",
+      "pais": "Uruguay",
+      "oferta": "rio-gol-2026",
+      "texto": "Eran 258,57 ida y vuelta, mochila de 10 kg, sin valija. La familia tarifaria no estaba clara.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 23,
+      "tipo": "resena"
+    },
+    {
+      "id": "c38",
+      "nombre": "Federico Larrosa",
+      "pais": "Uruguay",
+      "oferta": "rio-gol-2026",
+      "texto": "Copacabana sigue ahí. El precio de esos días, no.",
+      "respondeA": "c37",
+      "cuando": "agosto 2026",
+      "likes": 30,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c39",
+      "nombre": "Carolina Ibarra",
+      "pais": "Uruguay",
+      "oferta": "rio-gol-2026",
+      "texto": "Si vuelve a aparecer un directo a Galeão, anoten el día en que lo vieron.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 8,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c40",
+      "nombre": "Esteban Molina",
+      "pais": "Uruguay",
+      "oferta": "rio-gol-2026",
+      "texto": "Esas fechas de octubre ya pasaron. El directo a Galeão hay que volver a buscarlo.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 15,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c41",
+      "nombre": "Patricia Ruiz",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "¿El directo de SKY sale de Carrasco? Quiero estar segura antes de pasar el dato.",
+      "respondeA": "c1",
+      "cuando": "junio 2026",
+      "likes": 22,
+      "tipo": "resena"
+    },
+    {
+      "id": "c42",
+      "nombre": "Gonzalo Soca",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Medí el bolso en casa y después lo marqué en la compra. Arajet lo muestra claro en la tarifa Basic.",
+      "respondeA": "c8",
+      "cuando": "julio 2026",
+      "likes": 29,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c43",
+      "nombre": "Micaela Bonilla",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "El ferry de las 05:00 duele, pero el precio es el más bajo de los dos cruces.",
+      "respondeA": "c15",
+      "cuando": "agosto 2026",
+      "likes": 7,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c44",
+      "nombre": "Rodrigo Pacheco",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "Volver el 14 me deja el domingo en casa. Por eso lo prefiero.",
+      "respondeA": "c22",
+      "cuando": "septiembre 2026",
+      "likes": 14,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c45",
+      "nombre": "Beatriz Colman",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027",
+      "texto": "Ilhabela en el medio del itinerario es el tramo que más quiero leer bien.",
+      "respondeA": "c28",
+      "cuando": "octubre 2026",
+      "likes": 21,
+      "tipo": "resena"
+    },
+    {
+      "id": "c46",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Preço bom, mas a mala de mão fica de fora.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 28,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c47",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Floripa em fevereiro lota. Vale olhar de novo.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 6,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c48",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "Comprei no site da Arajet. Foi direto: datas, tarifa e pagamento.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 13,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c49",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "punta-cana-arajet-2027",
+      "texto": "O site avisou dos seis quilos antes de eu pagar. A compra em si foi simples.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 20,
+      "tipo": "resena"
+    },
+    {
+      "id": "c50",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "buenos-aires-colonia-2026",
+      "texto": "Um dia só, sem hotel. Corrido e barato.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 27,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c51",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "buenos-aires-francisco-2026",
+      "texto": "O Francisco é o caminho direto.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 5,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c52",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "costa-serena-2027",
+      "texto": "A taxa do cruzeiro muda o número.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 12,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c53",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "costa-serena-2027",
+      "texto": "Oito noites saindo de Montevidéu.",
+      "respondeA": null,
+      "cuando": "agosto 2026",
+      "likes": 19,
+      "tipo": "resena"
+    },
+    {
+      "id": "c54",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "rio-gol-2026",
+      "texto": "Essa tarifa já venceu.",
+      "respondeA": null,
+      "cuando": "septiembre 2026",
+      "likes": 26,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c55",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "rio-gol-2026",
+      "texto": "Copacabana continua valendo a viagem.",
+      "respondeA": null,
+      "cuando": "octubre 2026",
+      "likes": 4,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c56",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "costa-serena-2027",
+      "texto": "Bebida não entra. Anotem isso.",
+      "respondeA": null,
+      "cuando": "junio 2026",
+      "likes": 11,
+      "tipo": "comentario"
+    },
+    {
+      "id": "c57",
+      "nombre": "Renata Duarte",
+      "pais": "Brasil",
+      "oferta": "florianopolis-sky-2027",
+      "texto": "Ida e volta no mesmo bilhete. Gostei.",
+      "respondeA": null,
+      "cuando": "julio 2026",
+      "likes": 18,
+      "tipo": "resena"
+    },
+    {
+      "id": "n1",
+      "nombre": "Valentina Costa",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027-02-08",
+      "cuando": "agosto 2026",
+      "texto": "En agosto fui a Floripa con la Basic. El bolso entró. El carry-on, no.",
+      "tipo": "comentario",
+      "likes": 9,
+      "respondeA": null
+    },
+    {
+      "id": "n2",
+      "nombre": "Joaquín Silva",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027-02-15",
+      "cuando": "septiembre 2026",
+      "texto": "Esas fechas de febrero las vi como un desde. Yo volvería a abrir SKY el día que pague.",
+      "tipo": "comentario",
+      "likes": 6,
+      "respondeA": null
+    },
+    {
+      "id": "n3",
+      "nombre": "Camila Ferreira",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027-02-15b",
+      "cuando": "julio 2026",
+      "texto": "Una semana en febrero pide valija. La tarifa linda no la trae.",
+      "tipo": "resena",
+      "likes": 8,
+      "respondeA": null
+    },
+    {
+      "id": "n4",
+      "nombre": "Felipe Techera",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027-02-26",
+      "cuando": "junio 2026",
+      "texto": "Un fin de semana largo con mochila sí me cierra. Lo hice en junio y volví liviano.",
+      "tipo": "comentario",
+      "likes": 5,
+      "respondeA": null
+    },
+    {
+      "id": "n5",
+      "nombre": "Ana Bentancur",
+      "pais": "Uruguay",
+      "oferta": "florianopolis-sky-2027-02-12",
+      "cuando": "octubre 2026",
+      "texto": "El 12 de octubre miré de nuevo la ruta. Sigue siendo directo, y sigue sin valija en Basic.",
+      "tipo": "comentario",
+      "likes": 7,
+      "respondeA": null
+    },
+    {
+      "id": "n6",
+      "nombre": "Lucía Varela",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027-03-04",
+      "cuando": "agosto 2026",
+      "texto": "Armé esta salida en la web de Arajet. El total apareció antes de pagar y el mail llegó enseguida. Todavía no volé: el directo empieza en 2027.",
+      "tipo": "resena",
+      "likes": 11,
+      "respondeA": null
+    },
+    {
+      "id": "n7",
+      "nombre": "Ignacio Pereira",
+      "pais": "Uruguay",
+      "oferta": "punta-cana-arajet-2027-03-04",
+      "cuando": "septiembre 2026",
+      "texto": "La compra no se trabó. Lo único que releí fue el equipaje de la Basic.",
+      "tipo": "comentario",
+      "likes": 4,
+      "respondeA": null
+    },
+    {
+      "id": "n8",
+      "nombre": "Beatriz Colman",
+      "pais": "Uruguay",
+      "oferta": "costa-serena-2027-02-19",
+      "cuando": "octubre 2026",
+      "texto": "En esta salida de nueve noches la propina tampoco estaba en el número de la agencia. La sumé y me dio 1.306,50.",
+      "tipo": "resena",
+      "likes": 10,
+      "respondeA": null
+    },
+    {
+      "id": "n9",
+      "nombre": "Héctor Luján",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026-11-14",
+      "cuando": "junio 2026",
+      "texto": "En junio hice el día por Colonia. Salí a las cinco y a la noche dormí en casa.",
+      "tipo": "comentario",
+      "likes": 8,
+      "respondeA": null
+    },
+    {
+      "id": "n10",
+      "nombre": "Martina Díaz",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026-11-21",
+      "cuando": "julio 2026",
+      "texto": "El mismo pase, otro sábado. Alcanza para caminar, no para un museo largo.",
+      "tipo": "comentario",
+      "likes": 5,
+      "respondeA": null
+    },
+    {
+      "id": "n11",
+      "nombre": "Rodrigo Pacheco",
+      "pais": "Uruguay",
+      "oferta": "buenos-aires-colonia-2026-11-08",
+      "cuando": "agosto 2026",
+      "texto": "La vianda a bordo se agradece a las cinco de la mañana. El precio publicado ya la incluye.",
+      "tipo": "resena",
+      "likes": 6,
+      "respondeA": null
+    },
+    {
+      "id": "n12",
+      "nombre": "Silvia Quiroga",
+      "pais": "Argentina",
+      "oferta": "buenos-aires-colonia-2026-11-15",
+      "cuando": "septiembre 2026",
+      "texto": "Los vi llegar con la vianda y con tiempo justo. Desde Rosario me sirve como dato del cruce.",
+      "tipo": "comentario",
+      "likes": 4,
+      "respondeA": null
+    }
+  ],
+  "likesOferta": {
+    "florianopolis-sky-2027": {
+      "corazon": 41,
+      "idea": 18
+    },
+    "punta-cana-arajet-2027": {
+      "corazon": 33,
+      "idea": 22
+    },
+    "buenos-aires-colonia-2026": {
+      "corazon": 27,
+      "idea": 15
+    },
+    "buenos-aires-francisco-2026": {
+      "corazon": 24,
+      "idea": 11
+    },
+    "costa-serena-2027": {
+      "corazon": 38,
+      "idea": 19
+    },
+    "rio-gol-2026": {
+      "corazon": 16,
+      "idea": 9
+    }
+  },
+  "hilos": [
+    {
+      "id": "h1",
+      "titulo": "Comprar en Arajet",
+      "likes": 21,
+      "posts": [
+        {
+          "id": "h1p1",
+          "nombre": "Lucía Varela",
+          "pais": "Uruguay",
+          "cuando": "julio 2026",
+          "likes": 9,
+          "texto": "Entré a Arajet, puse Montevideo y Punta Cana, y en tres pantallas tenía el total. Nadie viajó todavía: el vuelo directo empieza en 2027."
+        },
+        {
+          "id": "h1p2",
+          "nombre": "Facundo Alegre",
+          "pais": "Argentina",
+          "cuando": "agosto 2026",
+          "likes": 6,
+          "texto": "El pago con tarjeta no pidió vueltas. El mail llegó con el código de la reserva."
+        },
+        {
+          "id": "h1p3",
+          "nombre": "Renata Duarte",
+          "pais": "Brasil",
+          "cuando": "septiembre 2026",
+          "likes": 4,
+          "texto": "Comprei pelo site. Foi simples, e o aviso da bagagem apareceu antes de confirmar."
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "titulo": "Un día en Buenos Aires",
+      "likes": 17,
+      "posts": [
+        {
+          "id": "h2p1",
+          "nombre": "Héctor Luján",
+          "pais": "Uruguay",
+          "cuando": "junio 2026",
+          "likes": 8,
+          "texto": "Salí a las cinco, crucé por Colonia y a las ocho estaba de vuelta en Montevideo. Cansado, y contento."
+        },
+        {
+          "id": "h2p2",
+          "nombre": "Silvia Quiroga",
+          "pais": "Argentina",
+          "cuando": "julio 2026",
+          "likes": 5,
+          "texto": "Los vi llegar a Puerto Madero con tiempo justo para caminar. No da para museo y almuerzo largo."
+        },
+        {
+          "id": "h2p3",
+          "nombre": "Bruno Martínez",
+          "pais": "Uruguay",
+          "cuando": "septiembre 2026",
+          "likes": 7,
+          "texto": "El Francisco, en noviembre del año pasado no, este junio fui en el directo. Otra cosa: llegas sin el bus de por medio."
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "titulo": "La valija que no entra",
+      "likes": 26,
+      "posts": [
+        {
+          "id": "h3p1",
+          "nombre": "Ana Bentancur",
+          "pais": "Uruguay",
+          "cuando": "agosto 2026",
+          "likes": 11,
+          "texto": "En SKY la Basic es el bolso de mano. Lo aprendí en Floripa, en agosto, cuando quise subir el carry-on."
+        },
+        {
+          "id": "h3p2",
+          "nombre": "Camila Ferreira",
+          "pais": "Uruguay",
+          "cuando": "agosto 2026",
+          "likes": 6,
+          "texto": "Para una semana sola alcanza. Con niños, la cuenta de la valija se come el descuento."
+        },
+        {
+          "id": "h3p3",
+          "nombre": "Renata Duarte",
+          "pais": "Brasil",
+          "cuando": "octubre 2026",
+          "likes": 3,
+          "texto": "Mala de mão fica de fora nessa tarifa. Vale somar antes."
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "titulo": "La cuota del crucero",
+      "likes": 14,
+      "posts": [
+        {
+          "id": "h4p1",
+          "nombre": "Beatriz Colman",
+          "pais": "Uruguay",
+          "cuando": "septiembre 2026",
+          "likes": 8,
+          "texto": "El cartel decía 999. La cuota de a bordo, noche por noche, no estaba en ese número. La sumé yo."
+        },
+        {
+          "id": "h4p2",
+          "nombre": "Pablo Etcheverry",
+          "pais": "Uruguay",
+          "cuando": "octubre 2026",
+          "likes": 4,
+          "texto": "El seguro tampoco entra. Para un crucero lo cotizo aparte, siempre."
+        },
+        {
+          "id": "h4p3",
+          "nombre": "Graciela Motta",
+          "pais": "Uruguay",
+          "cuando": "junio 2026",
+          "likes": 5,
+          "texto": "Me gusta que alguien lo escriba antes de que la familia se enamore del barco."
+        }
+      ]
+    }
+  ]
+}

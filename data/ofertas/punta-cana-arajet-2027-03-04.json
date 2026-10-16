@@ -1,0 +1,49 @@
+{
+  "id": "punta-cana-arajet-2027-03-04",
+  "titulo": "Punta Cana, 4 al 11 de marzo",
+  "tipo": "avion",
+  "origen": "Montevideo",
+  "destino": "Punta Cana",
+  "salida": "2027-03-04",
+  "regreso": "2027-03-11",
+  "vigencia_hasta": "2027-03-03",
+  "precio": "USD 494",
+  "precio_nota": "desde, ida y vuelta por persona. Jueves a jueves, dentro de la frecuencia publicada.",
+  "incluye": "Arajet muestra esta salida directa desde Montevideo. La compra se hace en su web.",
+  "no_incluye": "Carry-on, valija, asiento y cambios quedan fuera de la tarifa Basic.",
+  "fuente": "Página de Arajet «Vuela a Montevideo», salida Punta Cana 4 al 11 de marzo de 2027. Consultada el 16 de octubre de 2026. Los vuelos directos empiezan el 3 de marzo de 2027.",
+  "url": "https://www.arajet.com/es-do/vuela-a-montevideo",
+  "consultado": "2026-10-16",
+  "palabras": [
+    "punta cana",
+    "arajet",
+    "marzo"
+  ],
+  "paises": [
+    "Uruguay",
+    "República Dominicana"
+  ],
+  "agente": "Punta Cana",
+  "plataforma": "Arajet",
+  "equipaje": [
+    {
+      "icono": "personal",
+      "estado": "si",
+      "texto": "Artículo personal en Basic"
+    },
+    {
+      "icono": "cabina",
+      "estado": "no",
+      "texto": "Sin carry-on"
+    },
+    {
+      "icono": "valija",
+      "estado": "no",
+      "texto": "Sin valija despachada"
+    }
+  ],
+  "likes": {
+    "corazon": 14,
+    "idea": 6
+  }
+}

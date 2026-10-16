@@ -1,0 +1,18 @@
+{
+  "ayuda": {
+    "claves": ["hola", "buenas", "buen dia", "buenos dias", "ayuda", "menu", "que podes", "qué podes", "que puedes", "qué puedes"],
+    "texto": "Hola. Puedo contarte quién es Nicolás, qué es Tips Uruguay, y qué salidas hay desde Montevideo. Pregúntame por un destino, por un avión o por un crucero."
+  },
+  "nicolas": {
+    "claves": ["nicolas", "nicolás", "fiumarelli", "autor", "quien sos", "quién sos", "quien es nicolas", "quién es nicolás"],
+    "texto": "Nicolás Fiumarelli escribe Tips Uruguay desde Montevideo. Es ingeniero en computación, egresado de la Universidad de la República, y desde 2012 trabaja con redes e internet en LACNIC. Después de varios viajes en familia se dio cuenta de que compartir los tips lo hacía feliz, y por eso abrió esta comunidad."
+  },
+  "comunidad": {
+    "claves": ["tips uruguay", "comunidad", "empresa", "que es esto", "qué es esto", "que son", "qué son", "anuncio", "anuncios"],
+    "texto": "Tips Uruguay es una comunidad de tips, descuentos, aviones y cruceros, para viajes de ida y vuelta desde Montevideo. Si alguien pregunta por la empresa, es una empresa de anuncios: no vende pasajes ni paquetes. Los enlaces llevan a sitios oficiales: Booking, Expedia, Hotels.com, Agoda, Despegar, Civitatis y GetYourGuide, y también a la compañía de cada salida, como Arajet, SKY, GOL, Buquebus, Colonia Express o Costa Cruceros."
+  },
+  "sitios": {
+    "claves": ["booking", "expedia", "hotels", "agoda", "despegar", "civitatis", "getyourguide", "sitio oficial", "sitios oficiales", "enlace", "enlaces"],
+    "texto": "La reserva se hace en el sitio de quien vende. Para hoteles y actividades están Booking, Expedia, Hotels.com, Agoda, Despegar, Civitatis y GetYourGuide. En cada salida, el enlace va a la compañía de esa tarifa: Arajet, SKY, GOL, Buquebus, Colonia Express o Costa Cruceros."
+  }
+}

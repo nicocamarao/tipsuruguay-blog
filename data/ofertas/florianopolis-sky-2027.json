@@ -1,0 +1,48 @@
+{
+  "id": "florianopolis-sky-2027",
+  "imagen": "img/ofertas/florianopolis.jpg",
+  "titulo": "Florianópolis directo con SKY",
+  "tipo": "avion",
+  "origen": "Montevideo",
+  "destino": "Florianópolis",
+  "salida": "2027-02-01",
+  "regreso": "2027-02-08",
+  "vigencia_hasta": "2027-01-31",
+  "precio": "USD 366",
+  "precio_nota": "desde, ida y vuelta por persona",
+  "incluye": "Tarifa Basic: bolso o artículo personal.",
+  "no_incluye": "Carry-on, valija despachada y otros extras.",
+  "fuente": "Vista en Despegar Uruguay y contrastada con SKY. Consultada el 30 de septiembre de 2026.",
+  "url": "https://www.skyairline.com/",
+  "consultado": "2026-09-30",
+  "palabras": [
+    "florianopolis",
+    "florianópolis",
+    "floripa",
+    "sky",
+    "febrero"
+  ],
+  "paises": [
+    "Uruguay",
+    "Brasil"
+  ],
+  "agente": "Florianópolis",
+  "plataforma": "SKY",
+  "equipaje": [
+    {
+      "icono": "personal",
+      "estado": "si",
+      "texto": "Bolso o artículo personal"
+    },
+    {
+      "icono": "cabina",
+      "estado": "no",
+      "texto": "Sin carry-on"
+    },
+    {
+      "icono": "valija",
+      "estado": "no",
+      "texto": "Sin valija despachada"
+    }
+  ]
+}

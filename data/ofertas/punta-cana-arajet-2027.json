@@ -1,0 +1,47 @@
+{
+  "id": "punta-cana-arajet-2027",
+  "imagen": "img/ofertas/punta-cana.jpg",
+  "titulo": "Punta Cana directo con Arajet",
+  "tipo": "avion",
+  "origen": "Montevideo",
+  "destino": "Punta Cana",
+  "salida": "2027-03-27",
+  "regreso": "2027-04-02",
+  "vigencia_hasta": "2027-03-26",
+  "precio": "USD 534,41",
+  "precio_nota": "ida y vuelta por persona, impuestos y tasas incluidos",
+  "incluye": "Tarifa Basic: artículo personal de hasta 6 kg.",
+  "no_incluye": "Carry-on, valija despachada, asiento y cambios.",
+  "fuente": "Buscador oficial de Arajet. Consultada el 30 de septiembre de 2026.",
+  "url": "https://www.arajet.com/",
+  "consultado": "2026-09-30",
+  "palabras": [
+    "punta cana",
+    "arajet",
+    "caribe",
+    "marzo"
+  ],
+  "paises": [
+    "Uruguay",
+    "República Dominicana"
+  ],
+  "agente": "Punta Cana",
+  "plataforma": "Arajet",
+  "equipaje": [
+    {
+      "icono": "personal",
+      "estado": "si",
+      "texto": "Artículo personal de hasta 6 kg"
+    },
+    {
+      "icono": "cabina",
+      "estado": "no",
+      "texto": "Sin carry-on"
+    },
+    {
+      "icono": "valija",
+      "estado": "no",
+      "texto": "Sin valija despachada"
+    }
+  ]
+}

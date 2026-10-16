@@ -1,0 +1,51 @@
+{
+  "id": "costa-serena-2027-02-19",
+  "titulo": "Costa Serena, nueve noches, 19 de febrero",
+  "tipo": "crucero",
+  "origen": "Montevideo",
+  "destino": "Camboriú, Abraão, Río de Janeiro, Ilhabela y Buenos Aires",
+  "salida": "2027-02-19",
+  "regreso": "2027-02-28",
+  "vigencia_hasta": "2027-02-18",
+  "precio": "USD 1.306,50",
+  "precio_nota": "precio final mínimo por adulto en base doble: USD 1.176 de camarote interno más USD 130,50 de propina obligatoria (USD 14,50 por noche, nueve noches).",
+  "incluye": "Nueve noches, pensión completa, actividades a bordo y seguro de asistencia a bordo, según Traveller Viajes.",
+  "no_incluye": "Bebidas. La propina de a bordo no venía en los 1.176 y quedó sumada.",
+  "fuente": "Traveller Viajes Uruguay, salida 19 de febrero de 2027. Propina USD 14,50 por noche declarada en la misma ficha. Consultada el 16 de octubre de 2026.",
+  "url": "https://www.travellerviajes.com.uy/paquete/457/200/costa-cruceros-9-noches-salida-19-de-febrero",
+  "consultado": "2026-10-16",
+  "palabras": [
+    "costa",
+    "serena",
+    "crucero",
+    "febrero"
+  ],
+  "paises": [
+    "Uruguay",
+    "Brasil",
+    "Argentina"
+  ],
+  "agente": "Costa Serena",
+  "plataforma": "Costa Cruceros",
+  "equipaje": [
+    {
+      "icono": "cama",
+      "estado": "si",
+      "texto": "Camarote interno, base doble"
+    },
+    {
+      "icono": "comida",
+      "estado": "si",
+      "texto": "Pensión completa"
+    },
+    {
+      "icono": "bebida",
+      "estado": "no",
+      "texto": "Sin bebidas"
+    }
+  ],
+  "likes": {
+    "corazon": 19,
+    "idea": 8
+  }
+}

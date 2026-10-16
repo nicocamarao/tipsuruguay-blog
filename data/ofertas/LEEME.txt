@@ -1,0 +1,13 @@
+Para sumar una oferta: creá un archivo .json en esta carpeta y agregá su nombre a catalogo.json.
+
+Campos:
+- id: igual al nombre del archivo, sin .json
+- titulo, tipo (avion, crucero o paquete), origen, destino
+- salida y regreso: AAAA-MM-DD
+- vigencia_hasta: último día en que se muestra. Normalmente, el día anterior a la salida.
+- precio, precio_nota, incluye, no_incluye
+- fuente, url (sitio oficial), consultado
+- imagen: ruta de la card publicada en Instagram, por ejemplo img/ofertas/florianopolis.jpg
+- palabras: lista para el chat
+
+Si vigencia_hasta ya pasó, la oferta sigue en la carpeta pero el sitio y el chat la tratan como vencida.

@@ -1,0 +1,50 @@
+{
+  "id": "buenos-aires-colonia-2026-11-15",
+  "titulo": "Buenos Aires en el día con vianda, 15 de noviembre",
+  "tipo": "paquete",
+  "origen": "Montevideo",
+  "destino": "Buenos Aires",
+  "salida": "2026-11-15",
+  "regreso": "2026-11-15",
+  "vigencia_hasta": "2026-11-14",
+  "precio": "UYU 2.566",
+  "precio_nota": "por persona, con vianda a bordo. El operador publica este importe para la salida diaria.",
+  "incluye": "Bus Montevideo–Colonia–Montevideo y ferry. Ida 05:00, regreso 20:00. Vianda a bordo.",
+  "no_incluye": "Hotel.",
+  "fuente": "Colonia Express Uruguay, day tours desde Montevideo. Consultada el 16 de octubre de 2026.",
+  "url": "https://www.coloniaexpress.com/uy/Daytours",
+  "consultado": "2026-10-16",
+  "palabras": [
+    "colonia",
+    "buenos aires",
+    "day tour",
+    "ferry"
+  ],
+  "paises": [
+    "Uruguay",
+    "Argentina"
+  ],
+  "agente": "Buenos Aires",
+  "plataforma": "Colonia Express",
+  "equipaje": [
+    {
+      "icono": "bus",
+      "estado": "si",
+      "texto": "Bus y ferry en el día"
+    },
+    {
+      "icono": "comida",
+      "estado": "si",
+      "texto": "Vianda a bordo"
+    },
+    {
+      "icono": "cama",
+      "estado": "no",
+      "texto": "Sin hotel"
+    }
+  ],
+  "likes": {
+    "corazon": 11,
+    "idea": 4
+  }
+}

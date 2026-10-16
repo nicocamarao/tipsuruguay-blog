@@ -1,0 +1,42 @@
+{
+  "id": "buenos-aires-francisco-2026",
+  "imagen": "img/ofertas/buenos-aires-francisco.jpg",
+  "titulo": "Buenos Aires directo en el Francisco",
+  "tipo": "paquete",
+  "origen": "Montevideo",
+  "destino": "Buenos Aires",
+  "salida": "2026-11-12",
+  "regreso": "2026-11-14",
+  "vigencia_hasta": "2026-11-11",
+  "precio": "UYU 3.080",
+  "precio_nota": "ida y vuelta por persona, clase económica, fechas 12 al 14 de noviembre de 2026",
+  "incluye": "Cruce directo Montevideo–Buenos Aires en el Francisco.",
+  "no_incluye": "Cupos limitados. Puede cambiar o agotarse al reservar.",
+  "fuente": "Buquebus Uruguay. Consultada el 30 de septiembre de 2026.",
+  "url": "https://www.buquebus.com/",
+  "consultado": "2026-09-30",
+  "palabras": [
+    "francisco",
+    "buquebus",
+    "buenos aires",
+    "noviembre"
+  ],
+  "paises": [
+    "Uruguay",
+    "Argentina"
+  ],
+  "agente": "Buenos Aires",
+  "plataforma": "Buquebus",
+  "equipaje": [
+    {
+      "icono": "barco",
+      "estado": "si",
+      "texto": "Cruce directo en el Francisco"
+    },
+    {
+      "icono": "cama",
+      "estado": "no",
+      "texto": "Sin hotel incluido"
+    }
+  ]
+}
