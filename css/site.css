@@ -248,8 +248,10 @@ footer {
   cursor: pointer;
 }
 .mapa-launcher { bottom: 64px; }
-.mapa-launcher.activa, .chat-launcher.activa { background: #0b57f0; color: #fff; }
+.jazz-launcher { bottom: 112px; }
+.mapa-launcher.activa, .chat-launcher.activa, .jazz-launcher.activa { background: #0b57f0; color: #fff; }
 .chat-launcher { bottom: 16px; }
+.credito-jazz { font-size: 0.8rem; color: var(--muted); }
 .mapa-panel {
   position: fixed;
   left: 16px;
@@ -323,7 +325,7 @@ footer {
   .menu { display: block; width: 100%; }
   .menu nav { display: grid; gap: 4px; padding-top: 8px; }
   nav a { padding: 6px 0; }
-  .mapa-launcher, .chat-launcher, .chat-panel, .mapa-panel { left: 10px; }
+  .mapa-launcher, .chat-launcher, .jazz-launcher, .chat-panel, .mapa-panel { left: 10px; }
   .mapa-panel { width: calc(100vw - 20px); }
   .chat-panel { width: calc(100vw - 20px); max-height: 60vh; }
   table, thead, tbody, th, td, tr { display: block; }

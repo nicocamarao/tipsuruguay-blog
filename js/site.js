@@ -664,6 +664,46 @@ function armarFiltros(ofertas) {
   });
 }
 
+function armarJazz() {
+  if (document.querySelector(".jazz-launcher")) return;
+  const audio = document.createElement("audio");
+  audio.src = `${root}audio/off-to-osaka.mp3`;
+  audio.loop = true;
+  audio.preload = "none";
+  audio.volume = 0.45;
+  const boton = document.createElement("button");
+  boton.type = "button";
+  boton.className = "mapa-launcher jazz-launcher";
+  boton.textContent = "Jazz";
+  boton.title = "Off to Osaka, Kevin MacLeod, incompetech.com, CC BY 3.0";
+  const sonar = () => audio.play().then(() => boton.classList.add("activa")).catch(() => {});
+  boton.addEventListener("click", (evento) => {
+    evento.stopPropagation();
+    if (audio.paused) {
+      guardarCookie("tu_jazz", "on");
+      sonar();
+    } else {
+      audio.pause();
+      guardarCookie("tu_jazz", "off");
+      boton.classList.remove("activa");
+    }
+  });
+  document.body.append(audio, boton);
+  document.querySelectorAll("footer").forEach((pie) => {
+    if (pie.querySelector(".credito-jazz")) return;
+    const linea = document.createElement("p");
+    linea.className = "credito-jazz";
+    linea.innerHTML = 'Jazz: Off to Osaka, Kevin MacLeod (incompetech.com). <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.';
+    pie.append(linea);
+  });
+  if (leerCookie("tu_jazz") === "off") return;
+  const arrancar = () => {
+    sonar();
+    document.removeEventListener("pointerdown", arrancar);
+  };
+  document.addEventListener("pointerdown", arrancar);
+}
+
 function armarCielo() {
   if (document.querySelector(".cielo")) return;
   const cielo = document.createElement("div");
@@ -676,6 +716,7 @@ function armarCielo() {
 async function iniciar() {
   try {
     armarCielo();
+    armarJazz();
     const [ofertas, respuestas, plataformas, voces] = await Promise.all([
       cargarOfertas(),
       fetch(`${root}data/chat/respuestas.json`).then((respuesta) => respuesta.json()),
