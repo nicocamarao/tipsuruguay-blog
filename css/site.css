@@ -92,14 +92,14 @@ h1, h2, h3 { font-family: var(--font); font-weight: 800; line-height: 1.12; lett
 .brand img { width: 88px; height: 88px; border-radius: 50%; flex: none; box-shadow: var(--shadow); transition: transform 0.45s ease; }
 .brand:hover img, .brand:focus-visible img { transform: scale(1.06); }
 .brand strong { display: block; font-size: 1.35rem; }
-.brand em { display: block; font-style: normal; color: var(--muted); font-size: 0.82rem; }
+.brand em { display: block; font-style: normal; color: var(--muted); font-size: 0.98rem; }
 nav { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
 nav a {
   text-decoration: none;
   color: var(--ink);
   font-family: var(--font-boton);
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   border-radius: 999px;
   padding: 7px 12px;
   transition: background 0.35s ease, color 0.35s ease;
@@ -194,7 +194,7 @@ nav a.aqui { background: #0b57f0; color: #fff; }
   margin: 0;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   color: var(--clay);
   font-weight: 750;
 }
@@ -213,7 +213,7 @@ h1 { font-size: clamp(2.1rem, 6vw, 4.1rem); margin: 8px 0 12px; }
 .card:hover .card-foto, .card:focus-within .card-foto,
 .cubo-enlace:hover .cara img, .cubo-enlace:focus-visible .cara img,
 .foto-viaje:hover img, .author:hover img { transform: scale(1.06); }
-.meta { color: var(--muted); font-size: 0.9rem; }
+.meta { color: var(--muted); font-size: 1.05rem; }
 .side { display: grid; gap: 12px; align-content: start; }
 .side a {
   display: block;
@@ -286,8 +286,7 @@ footer {
   color: var(--blue-deep);
   border-radius: 999px;
   padding: 3px 10px;
-  font-family: var(--font-boton);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -296,7 +295,7 @@ footer {
 .sites { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; padding: 0; list-style: none; }
 .sites a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px; text-decoration: none; }
 .menu { display: none; }
-.chat-launcher, .chat-panel, button { font-family: var(--font-boton); font-weight: 500; }
+.chat-launcher, .chat-panel, button { font-weight: 500; font-size: 1.12rem; }
 .mapa-launcher, .chat-launcher {
   position: fixed;
   left: 16px;
@@ -329,7 +328,7 @@ footer {
 }
 .mapa-launcher.activa, .chat-launcher.activa, .jazz-launcher.activa { background: #0b57f0; color: #fff; }
 .chat-launcher { bottom: 16px; }
-.credito-jazz { font-size: 0.8rem; color: var(--muted); }
+.credito-jazz { font-size: 1rem; color: var(--muted); }
 .mapa-panel {
   position: fixed;
   left: 16px;
@@ -349,7 +348,7 @@ footer {
 .mapa-panel header { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; background: #e8f0ff; }
 .mapa-panel header button { border: 0; background: #d6e6ff; color: #083eb8; border-radius: 999px; padding: 6px 12px; cursor: pointer; font-weight: 500; }
 .mapa-lienzo { flex: 1; min-height: 240px; }
-.mapa-estado { margin: 0; padding: 8px 12px; color: var(--muted); font-size: 0.9rem; }
+.mapa-estado { margin: 0; padding: 8px 12px; color: var(--muted); font-size: 1.05rem; }
 .chat-panel {
   position: fixed;
   left: 16px;
@@ -370,7 +369,7 @@ footer {
 .chat-panel header { display: flex; justify-content: space-between; align-items: center; }
 .chat-panel header button, .chat-form button { border: 0; background: var(--blue); color: #fff; border-radius: 999px; padding: 8px 14px; font-weight: 700; cursor: pointer; }
 .agentes { display: flex; gap: 6px; overflow-x: auto; padding: 8px 12px; background: #f4f8ff; }
-.agentes button { border: 0; background: #d7e6ff; color: var(--blue-deep); border-radius: 999px; padding: 6px 12px; white-space: nowrap; cursor: pointer; font-family: var(--font-boton); font-weight: 700; }
+.agentes button { border: 0; background: #d7e6ff; color: var(--blue-deep); border-radius: 999px; padding: 8px 14px; white-space: nowrap; cursor: pointer; font-weight: 500; }
 .agentes button.activa { background: var(--blue); color: #fff; }
 .chat-log { overflow: auto; padding: 12px; display: grid; gap: 8px; }
 .reacciones { display: flex; gap: 8px; margin-top: 8px; position: relative; z-index: 30; }
@@ -383,7 +382,6 @@ footer {
   padding: 8px 14px;
   cursor: pointer;
   pointer-events: auto;
-  font-family: var(--font-boton);
   font-weight: 500;
 }
 .reacciones button.activa { background: #0b57f0; color: #fff; }
@@ -410,11 +408,11 @@ footer {
   thead { display: none; }
   tr { margin-bottom: 12px; border-bottom: 1px solid var(--line); }
   td { border: 0; padding: 4px 0; }
-  td::before { content: attr(data-label); display: block; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  td::before { content: attr(data-label); display: block; font-size: 0.95rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 }
 
 .filtros { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 16px; }
-.filtros button { border: 0; background: #d6e6ff; color: #083eb8; border-radius: 999px; padding: 6px 12px; font-weight: 500; }
+.filtros button { border: 0; background: #d6e6ff; color: #083eb8; border-radius: 999px; padding: 8px 14px; font-weight: 500; }
 .filtros button.activa { background: #0b57f0; color: #fff; }
 .equipaje { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 14px 0; }
 .equipaje li { display: flex; align-items: center; gap: 8px; background: #eef4ff; border-radius: 14px; padding: 8px 10px; min-width: 180px; }
@@ -425,7 +423,7 @@ footer {
 .hilo { border-top: 6px solid #0b57f0; }
 .voz header, .hilo > header { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .avatar { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 700; background: hsl(var(--t), 70%, 46%); }
-.voz time, .bandera { color: var(--muted); font-size: 0.85rem; }
+.voz time, .bandera { color: var(--muted); font-size: 1.02rem; }
 .resena { box-shadow: inset 4px 0 0 #38bdf8; }
 .contador { border: 0; background: #d6e6ff; color: #083eb8; border-radius: 999px; padding: 4px 10px; font-weight: 500; }
 .contador.activa { background: #0b57f0; color: #fff; }
